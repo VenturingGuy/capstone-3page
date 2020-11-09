@@ -1,3 +1,7 @@
+html {
+  font-family: helvetica;
+}
+
 #twitch-embed {
-  justify-content: center;
+  text-align: center;
 }
