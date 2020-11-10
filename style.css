@@ -37,3 +37,7 @@ html {
   top: 0;
   left: 15%;
 }
+
+.carousel-inner img {
+  margin: auto;
+}
