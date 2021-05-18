@@ -2,6 +2,19 @@ html {
   font-family: helvetica;
 }
 
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  background: #828283;
+}
+
+.navbar {
+  text-transform: uppercase;
+  background-color: rgb(17, 19, 34);
+}
+
 .hero-background-img {
   position: relative;
   background: rgba(0, 0, 0, 0.3);
@@ -12,7 +25,7 @@ html {
 .hero-background-img:after {
   content: "";
   position: absolute;
-  background-image: url("cover.jpg");
+  background-image: url("/images/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,7 +38,7 @@ html {
 }
 
 .twitch .twitch-video {
-  padding-top: 56.25%;
+  padding-top: 46.25%;
   position: relative;
   height: 0;
 }
