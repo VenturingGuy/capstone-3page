@@ -17,13 +17,22 @@ body {
   text-transform: uppercase;
   border: 0;
   background-color: rgb(17, 19, 34);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
 .hero-background-img {
   position: relative;
   background: rgba(0, 0, 0, 0.3);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-background-img:after {
