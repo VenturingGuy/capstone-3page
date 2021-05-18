@@ -2,16 +2,20 @@ html {
   font-family: helvetica;
 }
 
-body {
-  min-width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
+* { 
   margin: 0;
-  background: #828283;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #58585a;
 }
 
 .navbar {
   text-transform: uppercase;
+  border: 0;
   background-color: rgb(17, 19, 34);
 }
 
