@@ -1,5 +1,12 @@
 html {
   font-family: helvetica;
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
 }
 
 * { 
@@ -8,19 +15,30 @@ html {
   box-sizing: border-box;
 }
 
+header,
+footer {
+  flex: none;
+}
+
 body {
-  min-height: 100vh;
   background: #58585a;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
   text-transform: uppercase;
   border: 0;
+  height: 5%;
   background-color: rgb(17, 19, 34);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
+  width: 100%;
+}
+
+#main-banner {
   width: 100%;
 }
 
@@ -50,13 +68,9 @@ body {
   opacity: 50%;
 }
 
-#twitch-stream {
-  height: 100vh;
-}
-
 #twitch-embed {
-  height: 100%;
-  width: 80vw;
+  height: 100vh;
+  width: 80%;
   margin: auto;
 }
 
@@ -70,5 +84,12 @@ iframe {
 
 footer {
   background-color: rgb(17, 19, 34);
+  height: 5%;
   text-align: center;
+}
+
+main {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  flex: auto;
 }
