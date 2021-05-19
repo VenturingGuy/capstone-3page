@@ -30,18 +30,9 @@
     <p class="lead">You learn to love it. Eventually.</p>
   </div>
 
-  <div id="twitch-embed" class="twitch text-center">
-    <h3>Twitch Stream</h3>
-    <div class="twitch-video">
-      <iframe
-      src="https://player.twitch.tv/?channel=Wildschwein436&parent=https://the-boar-zone.herokuapp.com/"
-      height="100%"
-      width="100%"
-      frameborder="0"
-      scrolling="no"
-      allowfullscreen="true">
-     </iframe>
-   </div>
+  <!-- Add a placeholder for the Twitch embed -->
+  <div id="twitch-stream">
+    <div id="twitch-embed"></div>
   </div>
 
   <!-- BENEFITS -->
@@ -59,5 +50,16 @@
     Suggestions? Contact me at glorifiedgrunt436@Gmail.com.
   </footer>
 
+  <!-- Load the Twitch embed script -->
+  <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+  <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+  <script type="text/javascript">
+    new Twitch.Player("twitch-embed", {
+      width: "100%",
+      height: "100%",
+      channel: "wildschwein436"
+    });
+  </script>
 </body>
 </html>
