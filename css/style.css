@@ -50,8 +50,12 @@ body {
   opacity: 50%;
 }
 
-#twitch-embed {
+#twitch-stream {
   height: 100vh;
+}
+
+#twitch-embed {
+  height: 100%;
   width: 80vw;
   margin: auto;
 }
