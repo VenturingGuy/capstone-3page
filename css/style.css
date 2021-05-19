@@ -50,11 +50,16 @@ body {
   opacity: 50%;
 }
 
-#twitch-stream * {
+#twitch-embed {
   height: 100vh;
   width: 80vw;
   margin: auto;
 }
+
+iframe {
+  max-width: 100%; /* to make it responsive */
+}
+
 .carousel-inner img {
   margin: auto;
 }
