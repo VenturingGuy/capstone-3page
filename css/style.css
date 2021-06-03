@@ -15,8 +15,8 @@ html, body {
   box-sizing: border-box;
 }
 
-header,
-footer {
+
+header, footer {
   flex: none;
 }
 
@@ -92,4 +92,30 @@ main {
   margin-top: 5%;
   margin-bottom: 5%;
   flex: auto;
+}
+
+.blog-preview {
+  position: relative;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  display: inline-block;
+  margin-bottom: 5vh;
+
+}
+
+.blog-preview img {
+  max-width: 70vw;
+  max-height: 50vh;
+}
+
+.blow-preview h4 {
+  color: orange;
+}
+
+.blog-preview .description {
+  bottom: 0;
+  position: absolute;
+  padding: 1.5em;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6)
 }
